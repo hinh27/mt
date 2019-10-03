@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input id="nhap" />
+<input id="nhap2"/>
+
+<br><br>
+<button onclick="myFunction()">+</button>
+<button onclick="myFunction2()">-</button>
+<button onclick="myFunction3()">*</button>
+<button onclick="myFunction4()">/</button>
+<p id="hien"></p>
+
+<script>
+    function myFunction() {
+        let nhap = Number(document.getElementById("nhap").value);
+        let nhap2 = Number(document.getElementById("nhap2").value);
+        let cong= nhap+nhap2;
+        document.getElementById("hien").innerHTML = "Tổng: " + cong;
+    }
+    function myFunction2() {
+        let nhap = Number(document.getElementById("nhap").value);
+        let nhap2 = Number(document.getElementById("nhap2").value);
+        let tru= nhap-nhap2;
+        document.getElementById("hien").innerHTML = "Tổng: " + tru;
+    }
+    function myFunction3() {
+        let nhap = Number(document.getElementById("nhap").value);
+        let nhap2 = Number(document.getElementById("nhap2").value);
+        let nhan= nhap*nhap2;
+        document.getElementById("hien").innerHTML = "Tổng: " + nhan;
+    }
+    function myFunction4() {
+        let nhap = Number(document.getElementById("nhap").value);
+        let nhap2 = Number(document.getElementById("nhap2").value);
+        let chia= nhap/nhap2;
+        document.getElementById("hien").innerHTML = "Tổng: " + chia;
+    }
+</script>
+
+</body>
+</html>
